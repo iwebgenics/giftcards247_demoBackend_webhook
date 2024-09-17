@@ -10,9 +10,6 @@ app.post('/submit', (req, res) => {
   // Accessing the parsed JSON data from the request body
   const requestData = req.body;
 
-  // Log the received data
-  console.log('Received data:', requestData);
-
   // Send a response with the received data
   res.status(200).json({
     message: 'Data received successfully',
