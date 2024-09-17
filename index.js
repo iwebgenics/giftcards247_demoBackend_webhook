@@ -9,12 +9,9 @@ app.use(express.json());
 app.post('/submit', (req, res) => {
   // Accessing the parsed JSON data from the request body
   const requestData = req.body;
-
+console.log(req.body)
   // Send a response with the received data
-  res.status(200).json({
-    message: 'Data received successfully',
-    data: requestData,
-  });
+  res.send();
 });
 
 // Start the server
